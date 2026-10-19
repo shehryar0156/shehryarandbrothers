@@ -1,0 +1,137 @@
+a4-paper-ream|A4 Paper Ream|554|554|1
+accessories-all|Mobile &amp; Desk Accessories|504|505|2
+art-supplies-all|Art Supplies|720|300|3
+stationery-all|Stationery Range|600|500|4
+ball-pen|Ball Pens|554|554|5
+box-file|Box Files|480|480|6
+calculator|Calculator|720|600|7
+card-sheets|Card Sheets|228|221|8
+colour-sheets|Colour Sheets|500|473|9
+colour-tape|Colour Tape|225|225|10
+colour-pencils|Colour Pencils|275|183|12
+correction-pen-2|Correction Pen|720|720|13
+correction-pen|Correction Pen|720|720|14
+crayons-2|Crayons|248|203|15
+crayons|Crayons|554|554|16
+drawing-book|Drawing Book|554|554|17
+envelopes|Envelopes|554|554|18
+eraser|Erasers|601|511|19
+gel-pen-3|Gel Pens|720|720|20
+gel-pen-4|Gel Pens|720|720|21
+gel-pen|Gel Pen|466|658|22
+gel-pen-2|Gel Pens|450|450|23
+geometry-box|Geometry Box|548|559|24
+gatta-file|Gatta File|500|500|25
+glue-stick|Glue Stick|630|720|26
+glue-gun-sticks|Glue Gun Sticks|554|554|27
+punching-machine|Punching Machine|554|554|28
+id-card-covers|ID Card Covers|554|554|29
+ink-pads-2|Ink Pads|569|572|30
+ink-pad|Ink Pad|619|495|31
+notebooks|Notebooks|504|609|32
+paint-brushes-2|Paint Brushes|225|225|33
+paint-brushes|Paint Brushes|554|554|34
+binder-clips|Binder Clips|554|554|35
+paper-clips|Paper Clips|720|720|36
+fountain-pen|Fountain Pen|720|360|37
+permanent-marker-2|Permanent Marker|720|720|38
+permanent-markers|Permanent Markers|720|720|39
+printing-quality|Print Quality|447|447|40
+registers|Registers|640|479|41
+ring-file|Ring File|225|225|42
+scales|Scales|554|554|43
+scissors|Scissors|720|720|44
+sharpeners|Sharpeners|554|554|45
+stapler|Stapler &amp; Pins|554|554|46
+sticky-notes|Sticky Notes|720|720|47
+tape-dispenser-2|Tape Dispenser|720|720|48
+tape-dispenser|Tape Dispenser|554|554|49
+water-colours|Water Colours|194|259|50
+water-colours-2|Water Colours|700|700|51
+item-052||480|640|52
+item-053||626|349|53
+item-054||720|402|54
+item-055||554|554|55
+item-056||554|554|56
+item-058||554|554|58
+item-059||466|462|59
+item-060||597|566|60
+item-061||554|554|61
+item-063||478|641|63
+item-064||554|554|64
+item-065||554|554|65
+item-066||554|554|66
+item-067||720|720|67
+item-068||495|620|68
+item-069||720|720|69
+item-071||720|720|71
+item-073||489|627|73
+item-074||600|600|74
+item-075||225|225|75
+item-076||300|300|76
+item-077||720|360|77
+item-078||275|183|78
+item-079||500|500|79
+item-080||500|334|80
+item-081||196|257|81
+item-082||225|225|82
+item-083||225|225|83
+item-084||225|225|84
+item-085||554|554|85
+item-086||234|215|86
+item-087||225|225|87
+item-088||554|554|88
+item-089||600|600|89
+item-090||500|500|90
+item-091||425|495|91
+item-093||500|500|93
+item-095||350|350|95
+item-096||618|496|96
+item-097||225|225|97
+item-098||231|218|98
+item-099||500|500|99
+item-100||480|480|100
+item-101||225|225|101
+item-102||225|225|102
+item-103||225|225|103
+item-105||554|554|105
+item-106||535|573|106
+item-108||640|480|108
+item-109||450|450|109
+item-110||554|554|110
+item-111||498|401|111
+item-112||500|500|112
+item-113||600|398|113
+item-114||518|466|114
+item-115||554|554|115
+item-116||554|554|116
+item-117||500|331|117
+item-118||720|637|118
+item-119||452|678|119
+item-120||515|595|120
+item-121||714|429|121
+item-122||720|309|122
+item-123||720|360|123
+item-124||554|554|124
+item-125||554|554|125
+item-126||554|554|126
+item-127||554|554|127
+item-128||554|554|128
+item-129||586|523|129
+item-131||566|353|131
+item-132||554|554|132
+item-133||720|405|133
+item-134||720|404|134
+item-135||554|554|135
+item-136||547|560|136
+item-137||577|385|137
+item-138||600|320|138
+item-139||700|460|139
+item-140||512|512|140
+item-141||512|512|141
+item-142||683|400|142
+item-143||554|554|143
+photocopy-machine-full|Photocopy Machine (shop photo)|720|405|new-4.19.23-PM
+typing-service|Fast Typing (shop photo)|720|405|new-3.50.15-PM
+pvc-id-cards|PVC ID Cards (shop photo)|720|405|new-3.50.14-PM
+pencils|Pencils|720|480|new-4.03.35-PM

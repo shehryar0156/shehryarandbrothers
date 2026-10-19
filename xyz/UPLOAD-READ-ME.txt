@@ -1,0 +1,137 @@
+==========================================================
+ SHEHRYAR & BROTHERS - WEBSITE UPLOAD GUIDE (Roman-Urdu)
+==========================================================
+
+Yeh ZIP aap ki poori website hai. Isay upload karna bohat
+asaan hai - neeche steps follow karein.
+
+>>> UPLOAD LINK (Netlify - free, 10 second): https://app.netlify.com/drop
+
+ZAROORI: POORA FOLDER upload karein (index.html akela kabhi
+nahi) - warna photos phone/computer par nazar nahi aayen gi.
+
+----------------------------------------------------------
+STEP 1: ZIP KO EXTRACT KAREIN
+----------------------------------------------------------
+- Site.zip par double-click karein aur "Extract Here" karein.
+- Ek folder milega jis mein ye files hon gi:
+    index.html        (Home page)
+    services.html     (Services page)
+    gallery.html      (Gallery page)
+    rates.html        (Rates page)
+    contact.html      (Contact / Order page)
+    404.html          (Page na milne par dikhai deta hai)
+    site.css, site.js (Design + functionality)
+    logo-mark.svg     (S&B logo / favicon)
+    sab-logo.svg      (S&B monogram - alag se use kar sakte hain)
+    og-image.jpg      (WhatsApp/social share image)
+    robots.txt, sitemap.xml  (Google ke liye)
+    _headers          (Security headers - Netlify/Vercel)
+    img\items\        (Shop ki items/services ki 137 tasveerein - Gallery, Services aur Rate List ke liye)
+    UPLOAD-READ-ME.txt (Yeh file)
+
+----------------------------------------------------------
+STEP 2 (SABSE ASAAN - NETLIFY DROP): FOLDER DRAG & DROP
+----------------------------------------------------------
+1. Browser mein jayein:  https://app.netlify.com/drop
+2. Apna account bana lein (email se - bilkul free).
+3. Jahan "Drag and drop your site folder here" likha hai -
+   wahan apna extracted FOLDER wahan seedha drag kar dein.
+4. 10 second mein website live ho jayegi aur aap ko ek
+   PUBLIC LINK milega, jaisa:
+       https://shehryar-brothers.netlify.app
+   (ye aap ko apna randomized naam milega - change bhi kar
+   sakte hain: Site settings > Change site name)
+
+FAYDA (Security + HTTPS):
+- Netlify HTTPS (locked lock wala secure link) FREE deta hai.
+- Hum ne "_headers" file di hai - us se extra security
+  headers bhi lag jayein ge (X-Frame-Options, nosniff,
+  HSTS waghera).
+- Koi server manage nahi karna, koi password nahi.
+
+----------------------------------------------------------
+STEP 3: DOMAIN NAME UPDATE (ZAROORI - 2 minute)
+----------------------------------------------------------
+Apni site ka actual link milne ke baad (jo bhi ho):
+1. notepad se sitemap.xml aur robots.txt kholein.
+2. Jagah "shehryar-brothers.netlify.app" ko apne actual
+   site ke link se badal dein (sirf domain, waise hi).
+3. Save karein aur ZIP dobara upload/drop kar dein.
+   (Warna Google ko sitemap ka galat address jayega.)
+
+----------------------------------------------------------
+STEP 4: CHECK LIST (Deploy ke baad)
+----------------------------------------------------------
+[ ] Home khul raha hai - hero mein S&B watermark nazar aa
+    raha hai name ke peechhe?
+[ ] WhatsApp button dabayein - 0301-1808840 par message
+    jaa raha hai? (wa.me/923011808840)
+[ ] Phone: 0301-1808840 khul raha hai?
+[ ] Mobile (phone) par kholein - sab photos dikh rahi
+    hain? Phone par gallery 2 column mein aati hai aur
+    har photo poori load hoti hai.
+[ ] Gallery mein kisi bhi photo par tap karein - bari
+    (full screen) khulni chahiye. Phone par: left/right
+    SWIPE se agla/pichla photo, neeche swipe ya X se
+    band. Computer par: side buttons + Esc.
+[ ] Services / Gallery / Rates / Contact pages khul rahe
+    hain?
+[ ] Rates page par "Hamari Stationery Items" - har item
+    ke sath uski photo aa rahi hai? (ab 55 items hain
+    aur kisi bhi item par khali/letter tile nahi hai)
+[ ] 404 check karne ke liye: site-ka-link/koi-galat-page
+[ ] Purana version nazar aaye to phone/computer par page
+    ko refresh karein (browser cache ki wajah se).
+
+----------------------------------------------------------
+ALTERNATIVE HOSTING (agar Netlify na chahiye)
+----------------------------------------------------------
+- GitHub Pages: github.com - repo banayein, files upload,
+  Settings > Pages > main branch. Free + HTTPS.
+- Vercel: vercel.com - same drag & drop jaisa Netlify.
+- cPanel/Hostinger: public_html folder mein files upload
+  karein (HTTPS ke liye hosting ka SSL on karein).
+
+----------------------------------------------------------
+ZAROORI BATEN
+----------------------------------------------------------
+- Sirf upload karein - koi code change nahi karna.
+- Photos "img" folder ke sath honi chahiye - warna images
+  toot jayen gi.
+- Site ki files (index.html waghera) kisi bhi hosting par
+  seedhi (root) hon - folder ke andar-andar nahi.
+- Service rates (photocopy, print, lamination, binding waghera)
+  owner ke bataye hue hain. Stationery items ki rate list aur
+  trust numbers SAMPLE hain - real numbers milte hi site.js mein
+  badal dein (SERVICE_RATES / STATIONERY_ITEMS).
+
+----------------------------------------------------------
+SPEED (loading) - kya change hua
+----------------------------------------------------------
+- Loading screen (safed sheet + logo + CMYK bar) ab sirf ek
+  chhota sa flash hai (~0.3-0.5 second) - pehle woh page ki
+  SAARI images aur fonts ka intezar karti thi, isi se mobile
+  par bohat slow lagta tha.
+- Google Fonts ab page ko rok kar nahi bulati (async) - page
+  pehle turant khulta hai, font baad mein swap ho jata hai.
+- Busy/interrupted network par bhi page khulta hai (font na
+  aaye to default font use hota hai).
+- Photos lazy load hoti hain - sirf jo screen par aati hain
+  woh load hoti hain, is liye data bhi kam kharch hota hai.
+
+----------------------------------------------------------
+LANGUAGE: POORI SITE AB ENGLISH MEIN HAI
+----------------------------------------------------------
+- Saare 5 pages (Home, Services, Gallery, Rates, Contact) + 404
+  ka saara text ab ENGLISH mein hai (pehle Roman-Urdu/Urdu mix tha).
+- Urdu (nastaliq) lines - brand name, service titles, footer -
+  sab English ho gaye, aur bhaari Urdu font (Noto Nastaliq)
+  Google Fonts se hata diya gaya hai. Is se page aur tez khulta hai.
+- WhatsApp ke pre-written message bhi ab English mein hain.
+- Item/item names, prices aur photos wahi hain - sirf zubaan badli hai.
+- og-image.jpg (WhatsApp par share hone wali photo) mein ab bhi
+  Urdu brand name likha hai - chahein to usay bhi English mein
+  banana ho sakta hai.
+
+==========================================================

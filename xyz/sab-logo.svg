@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="176" viewBox="0 0 320 176" role="img" aria-label="S&amp;B â€” Shehryar and Brothers logo"><title>S&amp;B â€” Shehryar &amp; Brothers</title>
+        <g stroke="currentColor" stroke-opacity=".5" stroke-width="2.5" fill="none"><circle cx="30" cy="30" r="13"/><path d="M30 9v42M9 30h42"/></g>
+        <circle cx="30" cy="30" r="4" fill="#ffc72c"/>
+        <text x="168" y="126" text-anchor="middle" font-family="Bricolage Grotesque, Arial Black, Arial, sans-serif" font-weight="800" font-size="124" letter-spacing="-5" fill="currentColor">S<tspan fill="#e5187f" font-size="96">&amp;</tspan>B</text>
+        <g>
+          <rect x="59" y="148" width="50" height="12" rx="3" fill="#00a6e2"/>
+          <rect x="115" y="148" width="50" height="12" rx="3" fill="#e5187f"/>
+          <rect x="171" y="148" width="50" height="12" rx="3" fill="#ffc72c"/>
+          <rect x="227" y="148" width="50" height="12" rx="3" fill="currentColor" opacity=".6"/>
+        </g>
+      </svg>

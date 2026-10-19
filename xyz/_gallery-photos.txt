@@ -1,0 +1,285 @@
+====================================================================
+ITEM PHOTOS - Shehryar & Brothers site (D:\xyz)
+====================================================================
+
+STATUS: DONE (17-Oct-2026).  Owner's own shop/item photos are on the
+site.  148 photos came from:
+    C:\Users\Lenovo\Downloads\Shehryar and Brother Stationery items
+137 files are in img\items\ (133 of them = the gallery wall, 3 = the
+owner's service photos, 1 = the new pencils close-up). 10 files were
+left out (see below).
+
+WHAT IS ON THE SITE NOW
+-----------------------
+1) GALLERY  (#gallery, index.html + gallery.html)
+   - index.html : photo wall with 20 photos + button "Poori Gallery
+     Dekhein (133 Tasveerein)" -> gallery.html#gallery
+   - gallery.html: photo wall with ALL 133 product photos
+   - uniform 4/3 tiles (4 per row -> 3 -> 2 on mobile), lazy loaded
+   - click any photo -> LIGHTBOX: dark backdrop, caption strip (item
+     name + "n / 133"), prev/next buttons, X button, Esc/arrow keys
+   - lightbox markup is built by JS (site.js, "Item photo wall lightbox")
+   - CSS in site.css: ".item-wall", ".item-tile", ".lightbox", ".lb-*"
+
+2) SERVICE CARDS  (#services, index.html + services.html)
+   - the 5 cards have a photo each, using the existing ".service-media"
+     CSS (16/9 box, halftone overlay, zoom on hover):
+       Photocopy              -> img/items/photocopy-machine-full.jpg   (shop photo)
+       Color Print            -> img/items/item-134.jpg
+       PVC ID Cards           -> img/items/pvc-id-cards.jpg             (shop photo)
+       Scanning & Lamination  -> img/items/item-136.jpg
+       Fast Typing            -> img/items/typing-service.jpg           (shop photo)
+   - box aspect 16/9 rakha gaya hai kyunke owner ki photos 1376x768
+     (16:9) hoti hain - is liye kuch bhi cut nahi hota.
+     PVC wali photo square (600x600) hai, is liye us ke dono side
+     safed (us ke apne background) se bhar diye gaye hain.
+     item-134 / item-136 CSS se thora crop hote hain (photos 16:9 nahi).
+
+3) RATE LIST  (rates.html + index.html, rendered by site.js)
+   a) 3 service rate cards now have a photo header (".rate-media", 16/8):
+        Photocopy & Printing            -> photocopy-machine-full.jpg  (shop photo, 2:1 banner crop)
+        Scanning, Lamination & Binding  -> item-136.jpg
+        Cards, Typing & Other Services  -> pvc-id-cards.jpg
+   b) "Hamari Stationery Items" - ALL 55 items are product cards with a
+      1:1 photo (".item-thumb") above the name + price.  Har item ki
+      apni photo hai - koi khali/letter tile nahi bacha.
+      (17-Oct: pehle 5 items ki photo nahi thi - un mein se 3 ko photo
+       mil gayi, 2 items list se hata diye: "Rubber Bands (pack)" aur
+       "Brown Tape (packing)" - in dono ki koi photo folder mein nahi
+       thi. Owner photo bheje to wapis add kiye ja sakte hain.)
+      The photo of each item is set in site.js -> STATIONERY_ITEMS as the
+      3rd value:  ['Item name', 'Rs. XX', 'photo-slug']
+      (photo-slug '' = letter tile - ab kisi item par nahi).  Mapping:
+
+   ITEM -> PHOTO (site.js STATIONERY_ITEMS)
+   ---------------------------------------------------------------
+   Notebooks & Paper : Register(100pg)=registers, Exercise Book=notebooks,
+       A4 Paper(ream)=a4-paper-ream, Chart Paper=colour-sheets,
+       File Cover=gatta-file, Envelope=envelopes, Sticky Notes=sticky-notes
+   Pens & Pencils    : Ball Pen=ball-pen, Marker(whiteboard)=item-088,
+       Highlighter=item-084, Pencil=pencils (nayi photo), Colour Pencils=colour-pencils,
+       Sketch Pens=item-079, Crayons=crayons, Eraser=eraser,
+       Sharpener=sharpeners
+   Office & Geometry : Scale=scales, Geometry Box=geometry-box,
+       Glue Stick=glue-stick, Scissors=scissors, Stapler+Pins=stapler,
+       Punching Machine=punching-machine, Clear Tape=tape-dispenser,
+       Calculator=calculator
+   School Essentials : Pencil Box=item-064, Mechanical Pencil=item-121,
+       Lead Refills=item-127, Geometry Set=item-061, ID Card Covers=pvc-id-cards
+   Art & Craft       : Water Colors=water-colours-2, Poster Colors=water-colours,
+       Paint Brush Set=paint-brushes, Drawing Book=drawing-book,
+       Oil Pastels=item-085
+   Files & Folders   : Spring File=item-105, Plastic Folder=item-103, Ring Binder=ring-file
+   Office Desk       : Tape Dispenser=tape-dispenser-2, Visiting Cards=id-card-covers,
+       Rubber Stamp=ink-pads-2, Ink Pad=ink-pad, Fountain Pen=fountain-pen,
+       Gel Pen=gel-pen, Sign Pen=gel-pen-2, Correction Pen=correction-pen,
+       Permanent Marker=permanent-markers
+   Printing & Tech   : Photo Paper A4=card-sheets, Sticker Paper A4=item-093,
+       Thermal Roll=item-098, Ink Cartridge=printing-quality,
+       USB Drive=item-129, Laminating Pouch=item-103
+   Packs & Bundles   : Paper Clips=paper-clips, Stapler Pins=stapler,
+       Bulldog Clip=binder-clips
+   ---------------------------------------------------------------
+   (some slugs are reused for two items - e.g. stapler, item-103 -
+    it is fine, they are the same product type)
+
+4) FOOTER CREDITS (all 5 pages)
+   - old stale CC list removed.  Now one honest line: all photos are the
+     shop's own; no third-party photo used.  fc-lic badge = "Shop Photos".
+
+NEW PHOTOS (owner's own service photos)
+---------------------------------------
+   a) PHOTOCOPY  source:
+        C:\Users\Lenovo\Downloads\WhatsApp Image 2026-10-17 at 4.19.23 PM.jpeg
+        (1376 x 768 - owner standing at the Konica Minolta photocopier)
+      -> img/items/photocopy-machine-full.jpg  720 x 405 (16/9, kuch cut nahi)
+      Used on: "Photocopy" service card (index.html + services.html) AND as
+      the header banner of the "Photocopy & Printing" rate card (site.js
+      SERVICE_RATES) - banner 2:1 hai is liye wahan thora upar/neeche trim
+      hota hai (CSS object-fit: cover).
+      NOTE: pehle jo portrait photo (3.50.06 / 4.14.31) use hui thi wo
+      hata di gayi; ab ye landscape photo hai.
+   b) PVC ID CARDS  source:
+        ...\Shehryar and Brother Stationery items\WhatsApp Image 2026-10-17 at 3.50.14 PM.jpeg
+        (600 x 600 - blank cards -> printer -> card press -> ready card)
+      -> img/items/pvc-id-cards.jpg  720 x 405 (square content, sides white)
+      Used on: "PVC ID Cards" service card + "Cards, Typing & Other
+      Services" rate card ka banner (17-Oct: owner ne kaha) + item chip
+      "ID Card Covers (10 pcs)".  ("Visiting Cards" chip par ab
+      id-card-covers.jpg lagi hai.)
+   c) FAST TYPING  source:
+        ...\Shehryar and Brother Stationery items\WhatsApp Image 2026-10-17 at 3.50.15 PM.jpeg
+        (1376 x 768 - hands typing on a keyboard + coffee)
+      -> img/items/typing-service.jpg  720 x 405 (16/9, kuch cut nahi)
+      Used on: "Fast Typing" service card.
+
+UNUSED new photos (ab bhi)
+--------------------------
+   - WhatsApp Image 2026-10-17 at 3.50.06 PM.jpeg  (768x1364 - portrait,
+     wahi photocopy scene) -> use nahi hui
+   - C:\Users\Lenovo\Downloads\WhatsApp Image 2026-10-17 at 4.14.31 PM.jpeg
+     (1376x768 - banda photocopier ke sath, safed background) -> use nahi
+     hui (Photocopy card par owner ki apni shop photo lagi hui hai; kehne
+     par ye bhi laga di jayegi)
+   - "...\Shehryar and Brother Stationery items\Pancil.jpeg" (554x554) ->
+     ye ek clip-art/drawing hai jis par transparency ka CHECKERED pattern
+     baked hai (JPEG hai is liye), is liye use nahi ki.  "Pencil" chip par
+     ab owner ki asli pencils ki photo (4.03.35 PM) lagi hai.
+   - WhatsApp Image 2026-10-17 at 4.03.35 PM.jpeg AB USE HO GAYI:
+     -> img/items/pencils.jpg (720x480) = "Pencil" item chip.
+
+HOW THE 133 PRODUCT FILES WERE MADE
+-----------------------------------
+- Output folder: D:\xyz\img\items\  (JPEGs, longest side max 720 px,
+  quality 80, EXIF orientation fixed by hand, metadata dropped)
+- Names:
+    * photos that had a real name -> slug of the name
+      "A4 Paper Rim.jpeg" -> a4-paper-ream.jpg
+    * WhatsApp photos (no name)   -> item-NNN.jpg
+      NNN = the file's position in the alphabetically sorted folder list
+- Full mapping (slug | caption | w | h | original index) is in
+  D:\xyz\_photo-manifest.txt
+- 10 files left OUT:
+    * "Color Full Tape.jpeg"            - www.pinksuedeshoes.com watermark
+    * "WhatsApp ... 2.36.20 PM (3)"     - shutterstock.com watermark
+    * 8 exact duplicates (same photo twice - Eraser / Glue Stick /
+      Sticky Notes / A4 Paper Rim etc. also existed as WhatsApp files).
+      Found with a dHash (difference-hash) comparison.
+
+IF NEW PHOTOS COME
+------------------
+1. Tell the agent the file path.
+2. Agent resizes it (max 720, q80, EXIF fix) into D:\xyz\img\items\
+   with a new slug.
+3. Use it:
+   - gallery: add next to the other "<a class="item-tile" ...>" lines
+     (index.html + gallery.html) - keep the same pattern
+   - service card: change the src in the ".service-media" div
+     (index.html AND services.html)
+   - rate card header: site.js SERVICE_RATES  img: 'img/items/....jpg'
+   - stationery item: site.js STATIONERY_ITEMS - 3rd value of that item
+4. Rebuild + verify:
+      powershell -File D:\xyz\_mkzip.ps1
+   (it collects every img/... reference from the 5 html files + site.css
+    + site.js, checks the footer blocks, rejects burger-project leaks,
+    and reports entries + bad=0)
+
+RATES (owner ne 17-Oct-2026 ko apne rates diye - site.js SERVICE_RATES)
+--------------------------------------------------------------------
+   Photocopy B&W A4   Rs. 10 / page      Scanning A4 (PDF)   Rs. 15 / page
+   Photocopy B&W A3   Rs. 20 / page      Lamination A4       Rs. 100 each
+   Color Print A4     Rs. 50 / page      Lamination ID Card  Rs. 60 each
+   Color Glossy A4    Rs. 160 / page     Spiral Binding (50) Rs. 300 each
+   Color Print A3     Rs. 300 / page     Passport Photos     Rs. 150 / 4
+   WhatsApp / USB B&W Rs. 20 / page
+   Spiral Binding (100 pages) ki line site.js mein COMMENT kar di gayi hai -
+   owner se rate confirm hona hai (purana Rs. 90, 50 pages Rs. 300 ke sath
+   galat lagta hai). Rate milte hi comment hata kar wapis chalu karein.
+   STATIONERY_ITEMS (55 item - 2 hata diye) ke rate ab bhi SAMPLE hain.
+
+SITE STATE (verified 17-Oct-2026)
+---------------------------------
+- site.zip = 4,723 KB, 152 entries (15 root + 137 img/items), bad=0
+- index.html: 20 wall tiles + 5 service photos (own photos for
+  Photocopy / PVC ID Cards / Fast Typing); gallery.html: 133 tiles
+- rates: 55 item chips - HAR item ki apni photo (0 letter tiles) +
+  3 service rate photo headers
+- _mkzip.ps1 ab POORA img\items folder ship karta hai.  Wajah: item-chip
+  photo ka path JS data se banta hai ('img/items/' + slug + '.jpg') is liye
+  literal scan mein nahi aata tha - aisi koi bhi photo zip se BAHAR reh
+  jati thi (phone par tooti image).  Ab har chip slug bhi check hota hai.
+- headless Chrome: JS runs to completion (year filled), lightbox
+  injected, no CC credit text left anywhere
+- SKILL.md and all _*.ps1 / _*.txt scratch files stay OUT of the zip
+
+MOBILE (17-Oct-2026 - phone par sab theek dikhe)
+-----------------------------------------------
+- 360 / 390 / 414 / 768 px par index + gallery + rates + services +
+  contact check kiye: horizontal overflow 0, saari images load (0 broken),
+  55 item thumb, 133 gallery tiles.
+- Lightbox mein phone ke liye SWIPE: left/right = agla/pichla, neeche
+  swipe = band.  (Computer par side buttons + Esc.)
+- .lb-btn ka tap size phone par 46px, .item-tile par touch-action.
+- theme-color = --ink (#16130f) - phone ke browser bar ka rang.
+- FAILSAFE (ahem): agar phone par JS na chale ya beech mein crash ho jaye
+  to head ka chhota script .js class hata deta hai, warna hero aur
+  ".reveal" sections opacity:0 par atke rehte hain aur "phone par kuch
+  nazar nahi aata".  site.js poora chalne par "fx-ready" set karta hai.
+- Upload karte waqt POORA folder dena hai (index.html akela nahi).
+
+SPEED / LOADING (17-Oct-2026 - owner ne kaha "loading bohut slow hai")
+--------------------------------------------------------------------
+- ASAL WAJAH: load-sheet (loader) `window.load` par uth rahi thi, yani
+  page ki SAARI images + fonts ka intezar.  Probe (index @390px):
+  DOMContentLoaded = 1221ms magar load = 3686ms -> owner ~3.9 second
+  tak black sheet dekhta tha.
+- FIX: ab sheet DOMContentLoaded + 120ms par uth jati hai (failsafe
+  2600ms -> 1800ms).  Lift animation .85s -> .5s.
+- Fonts (Google) ab render-block nahi karti: preload + media="print"
+  onload trick + <noscript> fallback.  Google Fonts block/slow ho to
+  bhi page turant khulta hai (default font par).
+  Noto Nastaliq ab sirf wght 400;700 (pehle 500;700 - 400 wali jaghein
+  ghalat weight par thi).
+- site.js ab <head> mein `defer` ke sath (pehle body ke aakhir mein -
+  tab tak browser ko file ka pata hi nahi chalta tha).
+- Loader ka NAYA look: paper background + logo + "Shehryar & Brothers"
+  + mono tagline + CMYK bar (pehle kala background + uchhalte squares).
+- Rate card photos par bhi decoding="async".
+- _mframe.ps1 (layout) aur _lchk.ps1 (sheet/font/JS state) harness
+  re-run kiye: sab pages par loader `done`, html class `js fx-ready`,
+  font media=all, 0 overflow, 0 broken image.
+
+LANGUAGE = ENGLISH (17-Oct-2026, owner ki request)-------------------------------------------------
+- Poori site (5 pages + 404) English mein convert ki.  Roman-Urdu
+  aur Urdu dono gaye.  87 string pairs + 4 regex rules se convert
+  kiya (_en-pairs.txt / _en-apply.ps1 - dono ab delete kar diye).
+- Urdu text (brand title, hero h1, service titles ke .urdu span,
+  footer brand) English ho gaya aur CSS mein --nastaliq token +
+  .service-card h3 .urdu rule hata diye.
+- Google Fonts se Noto Nastaliq Urdu hata diya (bhaari font thi) -
+  ab sirf Bricolage Grotesque + IBM Plex Mono.  <html lang="en">.
+- CSS: .brand-title / .hero h1 / .footer-brand ab --display font
+  (Latin ke liye line-height 1.9 -> 1.05-1.2, hero h1 clamp 2.3-4.6rem).
+- BUG jo pakra aur fix kiya: pair "One Window Solution" -> "One-Window
+  Solution" ke baad "Window Solution" wala pair dobara lag gaya tha,
+  is se "One-One-Window Solution" ban gaya tha (index chip + h4) - fix.
+- Verify: 0 Roman-Urdu lines, 0 Urdu chars, layout 360/390/414/768 par
+  0 overflow / 0 broken image, screenshots (h-390-*.png) se visual check.
+- og-image.jpg mein ab bhi Urdu line hai (share card) - owner se pooch liya.
+
+HEADER FIX (17-Oct-2026, owner ki report: "Home" nav brand ke upar + logo border)
+--------------------------------------------------------------------------------
+- LOGO BORDER: .brand-logo ka border-radius 6px tha lekin andar ke SVG tile ka
+  radius ~15px - is liye border ke corners aur neeche ka hissa logo se bahar
+  "nikla hua" lagta tha.  Ab border-radius: 27% (= tile se exact match) aur
+  header logo ka 2px transparent margin hata diya
+  (viewBox "0 0 72 72" -> "2 2 68 68" sirf .brand-logo par; footer logo same).
+- "HOME" NAV BRAND KE UPAR: English brand name lamba hone se .brand squeeze ho
+  jata tha (span par min-width:0) aur nowrap title apne box se bahar nikal kar
+  nav ke neeche chala jata tha.  Measurement (fix se pehle): 1000px par title
+  ki width 33px, 1200px par 145px - honi chahiye ~234px.
+  Fix:
+    * .nav-link: font 1.1rem -> .95rem, padding 10/14px -> 9/10px
+    * gaps: header-inner 26 -> 14, nav-menu 4 -> 2, header-actions 12 -> 10
+    * .header-actions .btn-wa: padding 12/18px, font 1rem
+    * drawer breakpoint 980px -> 1200px (tablet par hamburger nav);
+      site.js isDrawerMode() bhi 980 -> 1200
+    * <=430px: .brand-title 1.02rem + .brand-logo 46px (phone par title ka
+      21px hissa box se bahar nikal raha tha)
+  Result (verify): 1200px+ par brand 312 + nav 596 + actions 178 = 1086px
+  (container 1186px) - koi overlap nahi; 390/430/1000/1200/1201/1280/1366/1600
+  par hOverflow=0 aur title clip=0.
+- HEADER WATERMARK: decorative "S&B" monogram (.sb-mark.sb-head,
+  position:absolute, 150px) header se hata diya - woh brand name ke peeche,
+  upar aur neeche nikal raha tha (owner ne "position: absolute" bataya).
+  Hero (.sb-hero) aur footer (.sb-foot) watermark waise hi hain.
+  CSS mein .sb-head ke rules reh gaye hain magar ab koi element unhe use nahi
+  karta (chahein to wapis add ho sakta hai).
+- Screenshots: %TEMP%\shots\fin-hdr-390/1000/1280/1366.png, logo2-400/1100.png
+
+OLDER REMOVED PHOTO SETS (still reversible)
+-------------------------------------------
+- CC Pakistan gallery photos   -> %TEMP%\photos-backup\pk-gallery-added\
+- old item/service/gallery CC photos -> %TEMP%\photos-backup\items|service|gallery\
+- site.js before the item photos (backup) -> %TEMP%\photos-backup\site.js.pre-itemphotos
+====================================================================
